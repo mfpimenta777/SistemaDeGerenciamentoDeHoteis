@@ -88,12 +88,12 @@ public class Hotel {
 			    System.out.println("6. Relatório de Histórico");
 			    System.out.println("0. Sair");
 			    int opcao = scanner.nextInt();
-			    scanner.nextLine(); // Limpar o buffer
+			    scanner.nextLine(); 
 			    switch (opcao) {
 			        case 1:
 			            System.out.print("Número do Quarto: ");
 			            int numero = scanner.nextInt();
-			            scanner.nextLine(); // Limpar o buffer
+			            scanner.nextLine(); 
 			            System.out.print("Tipo do Quarto: ");
 			            String tipo = scanner.nextLine();
 			            System.out.print("Preço Diário: ");
@@ -109,7 +109,7 @@ public class Hotel {
 			            LocalDate checkOut = LocalDate.parse(scanner.nextLine());
 			            System.out.print("Número de Quartos: ");
 			            int numQuartos = scanner.nextInt();
-			            scanner.nextLine(); // Limpar o buffer
+			            scanner.nextLine(); 
 			            System.out.print("Tipo de Quarto: ");
 			            String tipoQuarto = scanner.nextLine();
 			            hotel.realizarReserva(nome, checkIn, checkOut, numQuartos, tipoQuarto);
